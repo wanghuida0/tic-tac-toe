@@ -40,11 +40,36 @@ public class TicTacToeTest {
 	
 	@Test
 	public void testGameIsWonByXHorizontallyAcrossTopRow() {
-		assertTrue(false);
+		TicTacToe board = new TicTacToe();
+		board.getInput(2,0);
+		assertEquals(TicTacToe.Mark.X, board.getMark(2,0);
+		board.getInput(2,1);
+		assertEquals(TicTacToe.Mark.X, board.getMark(2,1);
+		board.getInput(2,2);
+		assertEquals(TicTacToe.Mark.X, board.getMark(2,2);
 	}
 	
 	@Test
 	public void testGameIsOverByTieIfAllLocationsAreFilled() {
-		assertTrue(false);
+		TicTacToe  board = new TicTacToe();
+		board.getInput(1,1);
+		assertEquals(TicTacToe.Mark.X, board.getMark(1,1));
+		board.getInput(0,0);
+		assertEquals(TicTacToe.Mark.O, board.getMark(0,0));
+		board.getInput(2,0);
+		assertEquals(TicTacToe.Mark.X, board.getMark(2,0));
+		board.getInput(0,2);
+		assertEquals(TicTacToe.Mark.O, board.getMark(0,2));
+		board.getInput(0,1);
+		assertEquals(TicTacToe.Mark.X, board.getMark(0,1));
+		board.getInput(2,1);
+		assertEquals(TicTacToe.Mark.O, board.getMark(2,1));
+		board.getInput(1,2);
+		assertEquals(TicTacToe.Mark.X, board.getMark(1,2));
+		board.getInput(1,0);
+		assertEquals(TicTacToe.Mark.O, board.getMark(1,0));
+		board.getInput(2,2);
+		assertEquals(TicTacToe.Mark.X, board.getMark(2,2));
+		assertEquals(TicTacToe.state.TIE, board.currentState);
 	}	
 }
