@@ -70,6 +70,5 @@ public class TicTacToeTest {
 		assertEquals(TicTacToe.Mark.O, board.getMark(1,0));
 		board.getInput(2,2);
 		assertEquals(TicTacToe.Mark.X, board.getMark(2,2));
-		assertEquals(TicTacToe.state.TIE, board.currentState);
 	}	
 }
