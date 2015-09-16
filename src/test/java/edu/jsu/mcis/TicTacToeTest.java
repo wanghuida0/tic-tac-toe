@@ -51,7 +51,7 @@ public class TicTacToeTest {
 	
 	@Test
 	public void testGameIsOverByTieIfAllLocationsAreFilled() {
-		TicTacToe  board = new TicTacToe();
+		//TicTacToe  board = new TicTacToe();
 		board.getInput(1,1);
 		assertEquals(TicTacToe.Mark.X, board.getMark(1,1));
 		board.getInput(0,0);
